@@ -1,0 +1,10 @@
+# Alabaster themes package always-create patterns
+#
+# These directories must be real directories (not symlinks) so that multiple
+# packages can install files into .config/helix.
+#
+# This allows both dotfiles/helix (config files) and alabaster-for-helix (themes)
+# to coexist.
+
+/.config/helix
+/.config/helix/themes
