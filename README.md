@@ -26,7 +26,7 @@ Everything else (keywords, variables, operators) uses the default foreground col
 If you use [dotx](https://pypi.org/project/dotx/) to manage your dotfiles:
 
 ```bash
-cd ~/develop/wolf/alabaster-for-helix
+cd ~/<where-you-keep-your-dotfile-collections>/alabaster-for-helix
 dotx install helix
 ```
 
