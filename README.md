@@ -2,14 +2,6 @@
 
 Minimal Alabaster color themes for the [Helix editor](https://helix-editor.com/).
 
-## Screenshots
-
-### Light Theme
-![Alabaster Light Theme](screenshots/alabaster-light.png)
-
-### Dark Theme
-![Alabaster Dark Theme](screenshots/alabaster-dark.png)
-
 ## Philosophy
 
 These themes follow the [Alabaster philosophy](https://github.com/tonsky/sublime-scheme-alabaster) by Nikita Prokopov: minimal syntax highlighting that emphasizes readability over decoration.
@@ -24,8 +16,31 @@ Everything else (keywords, variables, operators) uses the default foreground col
 
 ## Themes
 
-- **wolf-alabaster-light.toml** - Light background theme
-- **wolf-alabaster-dark.toml** - Dark background theme
+This port includes the complete Alabaster family matching tonsky's original suite:
+
+### Standard Variants (Text Color Highlighting)
+
+**wolf-alabaster-light** - Light background with colored text
+![Alabaster Light Theme](screenshots/alabaster-light.png)
+
+**wolf-alabaster-dark** - Dark background with colored text
+![Alabaster Dark Theme](screenshots/alabaster-dark.png)
+
+### BG Variants (Background Color Highlighting)
+
+**wolf-alabaster-light-bg** - Light background with colored backgrounds
+![Alabaster Light BG Theme](screenshots/variants/alabaster-light-bg.png)
+
+**wolf-alabaster-dark-bg** - Dark background with colored backgrounds
+![Alabaster Dark BG Theme](screenshots/variants/alabaster-dark-bg.png)
+
+### Mono Variants (Minimal Color)
+
+**wolf-alabaster-light-mono** - Light background, mostly grayscale
+![Alabaster Light Mono Theme](screenshots/variants/alabaster-light-mono.png)
+
+**wolf-alabaster-dark-mono** - Dark background, mostly grayscale
+![Alabaster Dark Mono Theme](screenshots/variants/alabaster-dark-mono.png)
 
 ## Installation
 
@@ -53,9 +68,17 @@ cp helix/dot-config/helix/themes/*.toml ~/.config/helix/themes/
 Edit your `~/.config/helix/config.toml`:
 
 ```toml
+# Standard variants (text color)
 theme = "wolf-alabaster-light"
-# or
 theme = "wolf-alabaster-dark"
+
+# BG variants (background color)
+theme = "wolf-alabaster-light-bg"
+theme = "wolf-alabaster-dark-bg"
+
+# Mono variants (minimal color)
+theme = "wolf-alabaster-light-mono"
+theme = "wolf-alabaster-dark-mono"
 ```
 
 ## Credits

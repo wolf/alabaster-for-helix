@@ -12,12 +12,12 @@
 Following tonsky's full Alabaster suite, create these additional variants:
 
 #### BG Variants (Background Highlighting)
-- [ ] Create `wolf-alabaster-light-bg.toml` - Uses background colors for highlighting instead of text colors
-- [ ] Create `wolf-alabaster-dark-bg.toml` - Dark version with background highlighting
+- [x] Create `wolf-alabaster-light-bg.toml` - Uses background colors for highlighting instead of text colors
+- [x] Create `wolf-alabaster-dark-bg.toml` - Dark version with background highlighting
 
 #### Mono Variants (Minimal Color)
-- [ ] Create `wolf-alabaster-light-mono.toml` - Monochromatic with minimal highlighting
-- [ ] Create `wolf-alabaster-dark-mono.toml` - Dark monochromatic version
+- [x] Create `wolf-alabaster-light-mono.toml` - Monochromatic with minimal highlighting
+- [x] Create `wolf-alabaster-dark-mono.toml` - Dark monochromatic version
 
 ## Promotion Checklist
 
