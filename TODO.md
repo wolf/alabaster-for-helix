@@ -23,24 +23,28 @@ Following tonsky's full Alabaster suite, create these additional variants:
 
 ### Completed
 - [x] Submit PR to tonsky/sublime-scheme-alabaster
-- [x] Add screenshots to README
+- [x] Add screenshots to README (all 6 variants)
+- [x] Submit PR to helix-editor/helix runtime themes (PR #15102)
+- [x] Add to Helix GitHub Wiki (all 6 themes with screenshots)
+- [x] Post in Helix GitHub Discussion #727 "Sharing Themes"
+- [x] Submit PR to npupko/awesome-helix (PR #17)
+- [x] Share in Helix Matrix chat (#helix-editor:matrix.org)
+- [x] Draft blog post for DEV.to (ready to publish Monday)
+- [x] Draft Reddit post for r/HelixEditor (ready to post Monday)
 
-### In Progress
-- [ ] Submit PR to helix-editor/helix runtime themes
-
-### Pending
-- [ ] Add to Helix GitHub Wiki (with screenshots)
-- [ ] Post in Helix GitHub Discussion #727 "Sharing Themes"
-- [ ] Submit PR to npupko/awesome-helix
+### For Monday Morning
 - [ ] Post to r/HelixEditor subreddit
-- [ ] Share in Helix Matrix chat (#helix-editor:matrix.org)
-- [ ] Write blog post on DEV.to
-- [ ] Post to Hacker News (Show HN)
-- [ ] Post to r/rust, r/programming, r/coolgithubprojects
-- [ ] Consider Product Hunt launch
+- [ ] Publish DEV.to blog post
+- [ ] Share DEV.to post on social media (Mastodon/LinkedIn)
+
+### Optional Future Promotion
+- [ ] Post to Hacker News (Show HN) - after DEV.to post is live
+- [ ] Cross-post to r/rust (Helix is written in Rust)
+- [ ] Cross-post to r/vim, r/neovim (Alabaster is popular there)
+- [ ] Post to r/programming, r/coolgithubprojects
 
 ## Notes
 
 - Theme philosophy: Only 4 semantic categories get color (strings, constants, comments, definitions)
 - Based on tonsky's Alabaster: https://github.com/tonsky/sublime-scheme-alabaster
-- Color palette matches original Sublime Text values exactly
+- Color palette matches original Sublime Text values exactly (modulo primary selection vs ordinary selections in the dark versions)
