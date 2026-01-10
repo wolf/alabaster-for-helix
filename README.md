@@ -2,6 +2,14 @@
 
 Minimal Alabaster color themes for the [Helix editor](https://helix-editor.com/).
 
+## Screenshots
+
+### Light Theme
+![Alabaster Light Theme](screenshots/alabaster-light.png)
+
+### Dark Theme
+![Alabaster Dark Theme](screenshots/alabaster-dark.png)
+
 ## Philosophy
 
 These themes follow the [Alabaster philosophy](https://github.com/tonsky/sublime-scheme-alabaster) by Nikita Prokopov: minimal syntax highlighting that emphasizes readability over decoration.
