@@ -140,7 +140,7 @@ definition = "#73B8FF"   # Blue - function/class definitions
 # Supporting colors
 punctuation = "#8C8C8C"  # Grey - dimmed operators/brackets
 selection = "#264F78"    # Dark blue - secondary selections
-selection-primary = "#355A7C"  # Slightly brighter - primary selection
+selection-primary = "#4A7BA7"  # Much brighter blue - primary selection (clearly distinct)
 active = "#0E7ACC"       # Bright blue - cursor, active elements
 highlight = "#FF9800"    # Orange - search, warnings
 error-red = "#F07178"    # Red/Pink - errors
