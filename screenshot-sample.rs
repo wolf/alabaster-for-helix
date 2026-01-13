@@ -6,7 +6,7 @@ use std::collections::HashMap;
 /// Documentation comments show the 4 semantic colors:
 /// - Strings (green)
 /// - Constants (magenta)
-/// - Comments (red - you're reading one!)
+/// - Comments, you're reading one (dark theme: yellow, light theme: red)
 /// - Definitions (blue - functions, types, classes)
 fn calculate_fibonacci(n: u32) -> u64 {
     // Keywords like 'if', 'let', 'return' stay default color
