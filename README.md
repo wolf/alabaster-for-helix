@@ -9,7 +9,7 @@ These themes follow the [Alabaster philosophy](https://github.com/tonsky/sublime
 **Only 4 semantic categories get color:**
 - Strings (green)
 - Constants (magenta)
-- Comments (red - they're important!)
+- Comments (dark themes: yellow; light themes: red - they're important!)
 - Definitions (blue - functions, types, classes)
 
 Everything else (keywords, variables, operators) uses the default foreground color because the structure of code is already clear from its formatting.
