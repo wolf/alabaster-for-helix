@@ -63,6 +63,10 @@ Copy the theme files to your Helix themes directory:
 cp helix/dot-config/helix/themes/*.toml ~/.config/helix/themes/
 ```
 
+### Plans to merge upstream
+
+_patches welcome_
+
 ## Usage
 
 Edit your `~/.config/helix/config.toml`:
