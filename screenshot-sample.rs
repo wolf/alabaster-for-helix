@@ -3,6 +3,11 @@
 
 use std::collections::HashMap;
 
+#[deprecated(note = "use new_function instead")]
+fn old_function() -> i32 {
+    42
+}
+
 /// Documentation comments show the 4 semantic colors:
 /// - Strings (green)
 /// - Constants (magenta)
@@ -15,7 +20,7 @@ fn calculate_fibonacci(n: u32) -> u64 {
         return n as u64;
     }
 
-    let mut cache: HashMap<u32, u64> = HashMap::new();
+    let mut cache = HashMap::new();
     cache.insert(0, 0);
     cache.insert(1, 1);
 
@@ -30,7 +35,7 @@ fn calculate_fibonacci(n: u32) -> u64 {
 }
 
 struct User {
-    name: String,        // Strings are green
+    name: String,        // Field names are plain
     age: u32,            // Types are blue
     active: bool,        // Builtin types are blue
 }
@@ -53,6 +58,10 @@ impl User {
     fn greet(&self) -> String {
         format!("Hello, {}! You are {} years old.", self.name, self.age)
     }
+
+    fn is_adult(&self) -> bool {
+        self.age >= 18
+    }
 }
 
 fn main() {
@@ -65,6 +74,19 @@ fn main() {
         println!("F({}) = {}", num, result);
     }
 
+    let data = vec![1, 2, 3, 4, 5];
+    let sum = data
+        .iter()
+        .filter(|x| *x % 2 == 0)
+        .map(|x| x * 2)
+        .sum::<i32>();
+    println!("Sum of doubled evens: {}", sum);
+
     let user = User::new("Alice".to_string(), 30);
-    println!("{}", user.greet());
+    let greeting = user.greet();
+    let adult = user.is_adult();
+    println!("{} (adult: {})", greeting, adult);
+
+    // Test deprecated function - should appear crossed out
+    let _old = old_function();
 }

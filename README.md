@@ -85,6 +85,7 @@ theme = "wolf-alabaster-dark-mono"
 
 - Based on [Alabaster](https://github.com/tonsky/sublime-scheme-alabaster) by Nikita Prokopov
 - Adapted for Helix by Wolf
+- Feedback on missing scopes from [@Rudxain](https://github.com/Rudxain) ([#15102](https://github.com/helix-editor/helix/pull/15102))
 
 ## License
 

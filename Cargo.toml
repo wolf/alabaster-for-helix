@@ -1,0 +1,8 @@
+[package]
+name = "screenshot-sample"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "sample"
+path = "screenshot-sample.rs"
