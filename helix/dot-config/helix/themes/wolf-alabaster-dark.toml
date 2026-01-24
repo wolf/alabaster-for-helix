@@ -104,8 +104,9 @@ diagnostic = { underline = { style = "curl" } }
 "function.method.call" = { fg = "fg" }
 
 "constructor" = { fg = "definition" }
-"type" = { fg = "definition" }
-"type.builtin" = { fg = "definition" }
+"type" = { fg = "fg" }
+"type.definition" = { fg = "definition" }
+"type.builtin" = { fg = "fg" }
 
 # These are NOT highlighted (Alabaster philosophy: keywords are obvious)
 "keyword" = { fg = "fg" }
