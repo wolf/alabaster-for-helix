@@ -14,6 +14,18 @@ These themes follow the [Alabaster philosophy](https://github.com/tonsky/sublime
 
 Everything else (keywords, variables, operators) uses the default foreground color because the structure of code is already clear from its formatting.
 
+## Design Decisions
+
+### Function calls vs definitions
+
+Tonsky's original Alabaster highlights function **definitions** but not function **calls**. Helix's tree-sitter queries don't always distinguish these—some languages (Lua, Haskell) use `function.call` for calls, but most (Rust, Python, JavaScript) use bare `function` for both.
+
+This theme sets `function.call` and `function.method.call` to the default foreground color, which helps in languages that distinguish them.
+
+### Builtin functions
+
+Helix uses `function.builtin` exclusively at call sites (builtins like `print()` don't have user-visible definitions). Since these are calls, not definitions, we don't highlight them—consistent with tonsky's philosophy.
+
 ## Themes
 
 This port includes the complete Alabaster family matching tonsky's original suite:

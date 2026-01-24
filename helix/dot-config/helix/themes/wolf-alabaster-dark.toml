@@ -96,7 +96,9 @@ diagnostic = { underline = { style = "curl" } }
 "comment.block" = { fg = "comment" }
 
 "function" = { fg = "definition" }
-"function.builtin" = { fg = "definition" }
+# Helix uses function.builtin only at call sites (no builtin definitions exist),
+# so we treat it as a call—unhighlighted per tonsky's philosophy.
+"function.builtin" = { fg = "fg" }
 "function.method" = { fg = "definition" }
 "function.call" = { fg = "fg" }
 "function.method.call" = { fg = "fg" }
