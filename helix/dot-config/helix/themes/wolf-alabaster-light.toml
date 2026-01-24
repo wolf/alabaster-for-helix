@@ -33,7 +33,7 @@ diagnostic = { underline = { style = "curl" } }
 "ui.text" = { fg = "fg" }
 "ui.text.focus" = { fg = "active", modifiers = ["bold"] }
 
-"ui.cursor" = { bg = "active", fg = "bg" }
+"ui.cursor" = { bg = "cursor-secondary", fg = "bg" }
 "ui.cursor.primary" = { bg = "active", fg = "bg" }
 "ui.cursor.match" = { bg = "highlight" }
 "ui.cursorline" = { bg = "cursorline" }
@@ -156,6 +156,7 @@ punctuation = "#777777"  # Grey - dimmed operators/brackets
 selection = "#DDE7ED"    # Light gray-blue - secondary selections (subtle but distinct)
 selection-primary = "#BFDBFE"  # Light blue - primary selection (original Alabaster)
 active = "#007ACC"       # Bright blue - cursor, active elements
+cursor-secondary = "#5A9DC4"  # Dimmed blue - secondary cursors (multi-cursor)
 highlight = "#FFBC5D"    # Orange - search, warnings
 error-red = "#AA3731"    # Red - errors
 panel = "#EEEEEE"        # Darker grey - UI panels, menus, popups
