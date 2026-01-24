@@ -98,6 +98,8 @@ diagnostic = { underline = { style = "curl" } }
 "function" = { fg = "definition" }
 "function.builtin" = { fg = "definition" }
 "function.method" = { fg = "definition" }
+"function.call" = { fg = "fg" }
+"function.method.call" = { fg = "fg" }
 
 "constructor" = { fg = "definition" }
 "type" = { fg = "definition" }
@@ -122,7 +124,7 @@ diagnostic = { underline = { style = "curl" } }
 "tag" = { fg = "definition" }
 "tag.error" = { fg = "error-red", underline = { style = "line" } }
 "attribute" = { fg = "fg" }
-"namespace" = { fg = "definition" }
+"namespace" = { fg = "fg" }
 "label" = { fg = "constant" }
 
 # MARKUP - For markdown/documentation
