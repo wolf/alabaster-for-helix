@@ -35,7 +35,11 @@ diagnostic = { underline = { style = "curl" } }
 
 "ui.cursor" = { bg = "cursor-secondary", fg = "bg" }
 "ui.cursor.primary" = { bg = "active", fg = "bg" }
-"ui.cursor.match" = { bg = "highlight" }
+# Bracket matching: Helix only styles the *other* bracket via ui.match, not the one
+# under the cursor. ui.cursor.match affects cursor appearance, not the bracket itself.
+# Following tonsky's Sublime approach (blue + underline) as closely as Helix allows.
+"ui.cursor.match" = { fg = "active", underline = { style = "line" } }
+"ui.match" = { fg = "active", underline = { style = "line" } }
 "ui.cursorline" = { bg = "cursorline" }
 "ui.cursorcolumn" = { bg = "cursorline" }
 

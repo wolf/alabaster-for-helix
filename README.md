@@ -26,6 +26,12 @@ This theme sets `function.call` and `function.method.call` to the default foregr
 
 Helix uses `function.builtin` exclusively at call sites (builtins like `print()` don't have user-visible definitions). Since these are calls, not definitions, we don't highlight them—consistent with tonsky's philosophy.
 
+### Bracket matching
+
+Tonsky's Sublime theme highlights **both** brackets in a matching pair with blue foreground + underline. Helix's model is different: `ui.match` styles the *other* bracket (not under the cursor), while `ui.cursor.match` only affects the cursor's appearance, not the bracket character itself.
+
+This theme uses blue + underline for `ui.match`, matching tonsky's style as closely as Helix allows. The bracket under the cursor remains styled as regular punctuation, but is visually distinct by virtue of being under the (blue) cursor.
+
 ## Themes
 
 This port includes the complete Alabaster family matching tonsky's original suite:
