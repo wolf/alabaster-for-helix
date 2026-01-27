@@ -3,11 +3,13 @@
 # Author: Wolf <wolf@zv.cx>
 # Project: https://github.com/wolf/alabaster-for-helix
 #
-# This is the dark "Mono" (monochromatic) variant of Alabaster for Helix.
-# Uses minimal color - mostly grayscale with subtle backgrounds for strings/constants.
-# Only errors and search results use color.
+# The "Mono" (monochromatic) variant of Alabaster for Helix - dark background.
+# Mostly grayscale with subtle backgrounds for strings/constants. Only errors
+# and search results use color. Based on tonsky's "Alabaster Dark Mono" variant.
 #
-# Based on tonsky's "Alabaster Dark Mono" variant.
+# STRUCTURE: Inherits UI rules from wolf-alabaster-dark, overrides syntax
+# highlighting for monochromatic style. Syntax rules mirror wolf-alabaster-light-mono
+# (Helix lacks multiple inheritance, so we duplicate them here).
 
 inherits = "wolf-alabaster-dark"
 

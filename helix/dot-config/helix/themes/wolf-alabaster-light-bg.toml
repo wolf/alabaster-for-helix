@@ -3,12 +3,13 @@
 # Author: Wolf <wolf@zv.cx>
 # Project: https://github.com/wolf/alabaster-for-helix
 #
-# This is the "BG" (background) variant of Alabaster for Helix.
-# Unlike the standard version that uses text colors, this variant uses background colors
-# for syntax highlighting while keeping text mostly black.
+# The "BG" (background) variant of Alabaster for Helix - light background.
+# Uses background colors for syntax highlighting while keeping text black.
+# Based on tonsky's "Alabaster BG" variant.
 #
-# Based on tonsky's "Alabaster BG" variant from:
-# https://github.com/tonsky/sublime-scheme-alabaster
+# STRUCTURE: Inherits UI rules from wolf-alabaster-light, overrides syntax
+# highlighting to use backgrounds instead of foreground colors. The dark-bg
+# variant duplicates these syntax rules (Helix lacks multiple inheritance).
 
 inherits = "wolf-alabaster-light"
 

@@ -4,20 +4,27 @@
 # Project: https://github.com/wolf/alabaster-for-helix
 # Download: https://raw.githubusercontent.com/wolf/alabaster-for-helix/main/helix/dot-config/helix/themes/wolf-alabaster-light.toml
 #
-# This is a light-background theme especically for the Helix editor.
+# A light-background Alabaster theme for the Helix editor.
 #
-# The most important part here is the syntax stuff, but the theme includes UI stuff specifically for Helix, as well.
+# PRIMARY GOAL: Maintain fidelity with Nikita Prokopov's (tonsky) Alabaster
+# implementation and philosophy. See:
+#   * https://tonsky.me/blog/syntax-highlighting/ - the philosophy
+#   * https://github.com/tonsky/sublime-scheme-alabaster - the reference impl
 #
-# What I care about is:
+# We diverge from tonsky's implementation only where Helix has concepts that
+# must be supported but aren't accounted for in the original (e.g., multiple
+# cursors, primary/secondary selections, jump labels, inlay hints).
+#
+# Given that, the priorities are:
+#   * Fidelity to tonsky's Alabaster
 #   * Readable syntax, no matter the language
 #   * The error messages provided by the LSP
 #   * Anything special needed to make the UI non-surprising
 #   * Building a minimal definition
 #
-# I started from a couple important sources:
-#   * The [priorities and ideas](https://tonsky.me/blog/syntax-highlighting/) behind the Alabaster Theme (which exists for many editors) by Nikita Prokopov
-#   * His [actual repo implementing the theme](https://github.com/tonsky/sublime-scheme-alabaster)
-#   * A [theme template](https://github.com/joegm/helix-theme-template) on GitHub provided by joegm
+# STRUCTURE: This file defines all syntax and UI rules. wolf-alabaster-dark
+# inherits these rules and only overrides the [palette] section. Edit rules
+# here; they apply to both themes. Edit colors in each theme's palette.
 
 # I don't consider this to be done! I absolutely want feedback. I absolutely will continue to tinker.
 
