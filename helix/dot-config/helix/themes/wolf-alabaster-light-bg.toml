@@ -32,12 +32,18 @@ inherits = "wolf-alabaster-light"
 "comment.block" = { fg = "fg", bg = "comment-bg" }
 
 "function" = { fg = "fg", bg = "definition-bg" }
-"function.builtin" = { fg = "fg", bg = "definition-bg" }
 "function.method" = { fg = "fg", bg = "definition-bg" }
+# Calls should NOT be highlighted (tonsky's philosophy: only definitions)
+"function.call" = { fg = "fg" }
+"function.method.call" = { fg = "fg" }
+# Helix uses function.builtin only at call sites (no builtin definitions exist)
+"function.builtin" = { fg = "fg" }
 
 "constructor" = { fg = "fg", bg = "definition-bg" }
-"type" = { fg = "fg", bg = "definition-bg" }
-"type.builtin" = { fg = "fg", bg = "definition-bg" }
+# Type usages should NOT be highlighted, only definitions
+"type" = { fg = "fg" }
+"type.definition" = { fg = "fg", bg = "definition-bg" }
+"type.builtin" = { fg = "fg" }
 
 # Special cases
 "tag" = { fg = "fg", bg = "definition-bg" }
